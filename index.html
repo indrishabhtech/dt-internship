@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Deep Thought</h1>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section class="intro">
+                <h2>Technical Project Management</h2>
+                <p>Explore the world of management.</p>
+            </section>
+            
+            <section class="content">
+                <div class="project" data-project="A">
+                    <h3>Project A</h3>
+                    <p>Description: Learn how to manage projects effectively.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+                <div class="project" data-project="B">
+                    <h3>Project B</h3>
+                    <p>Description: Advanced techniques in project management.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+                <div class="project" data-project="C">
+                    <h3>Project C</h3>
+                    <p>Description: Tools and software for project management.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p> &copy; &nbsp; 2024 Deep Thought</p>
+        </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project Details</h2>
+            <p id="project-details"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
